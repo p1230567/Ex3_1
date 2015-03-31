@@ -42,10 +42,10 @@ public class RectBar extends View {
         super.onDraw(canvas);
         int ViewHight = getHeight();
         int ViewWidth = getWidth();
-        if (shape == "Round")
+        if (shape.equals("Round"))
 //            傳入的setShape為Round則畫圓
             canvas.drawCircle(ViewWidth / 4, ViewHight / 4, 155f, paint);
-        else if (shape == "Square")
+        else if (shape.equals("Square"))
 //            傳入的setShape為Square則畫方
             canvas.drawRect(ViewWidth / 8, ViewHight / 8, ViewWidth / 2, ViewWidth / 2, paint);
 
